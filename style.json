@@ -38,6 +38,25 @@
       "paint": {
         "line-color": "rgb(20, 90, 255)"
       }
+    },
+    {
+      "id": "pg-structure",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "structure",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(255, 249, 196)"
+      }
     }
   ]
 }

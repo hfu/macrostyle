@@ -22,5 +22,6 @@
   layers: [
     background
     Coastline
+    pg-structure
   ]
 }
