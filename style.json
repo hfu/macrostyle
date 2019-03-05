@@ -52,7 +52,9 @@
         [
           "Polygon",
           "MultiPolygon"
-        ]
+        ],
+        true,
+        false
       ],
       "paint": {
         "fill-color": "rgb(255, 249, 196)"
