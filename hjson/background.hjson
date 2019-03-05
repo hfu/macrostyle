@@ -2,6 +2,6 @@
   id: background
   type: background
   paint: {
-    'background-color': rgb(245, 245, 245)
+    background-color: rgb(245, 245, 245)
   }
 }

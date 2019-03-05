@@ -4,6 +4,6 @@
   source: v
   source-layer: Coastline
   paint: {
-    'line-color': rgb(20, 90, 255)
+    line-color: rgb(20, 90, 255)
   }
 }

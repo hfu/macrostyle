@@ -23,5 +23,7 @@
     background
     Coastline
     pg-structure
+    pg-nature
+    pg-boundary
   ]
 }
