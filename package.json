@@ -1,0 +1,23 @@
+{
+  "name": "macrostyle",
+  "version": "1.0.0",
+  "description": "onyx-tapioca/style.json compatible style.json generator using hjson as macros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfu/macrostyle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/hfu/macrostyle/issues"
+  },
+  "homepage": "https://github.com/hfu/macrostyle#readme",
+  "dependencies": {
+    "hjson": "^3.1.2"
+  }
+}

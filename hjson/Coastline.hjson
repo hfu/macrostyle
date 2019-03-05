@@ -1,0 +1,9 @@
+{
+  id: Coastline
+  type: line
+  source: v
+  source-layer: Coastline
+  paint: {
+    'line-color': rgb(20, 90, 255)
+  }
+}

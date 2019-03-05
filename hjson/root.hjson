@@ -1,0 +1,26 @@
+{
+  version: 8
+  metadata : {}
+  center: [0, 0]
+  zoom: 5
+  sources: {
+    v: {
+      type: vector
+      tiles: [
+        https://vectortiles.xyz/zxy/tapioca/{z}/{x}/{y}.pbf
+      ]
+      attribution: OpenStreetMap contributors
+      maxzoom: 15
+    }
+    extent: {
+      type: geojson
+      data: https://hfu.github.io/tapioca-extent/extent.geojson
+    }
+  }
+  sprite: https://hfu.github.io/unite-sprite/sprite
+  glyphs: https://vectortiles.xyz/fonts/{fontstack}/{range}.pbf
+  layers: [
+    background
+    Coastline
+  ]
+}
