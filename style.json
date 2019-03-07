@@ -32,7 +32,12 @@
       "source": "v",
       "source-layer": "Coastline",
       "paint": {
-        "line-color": "rgb(20, 90, 255)"
+        "line-color": [
+          "rgb",
+          33,
+          150,
+          243
+        ]
       }
     },
     {
@@ -336,6 +341,86 @@
             222,
             251
           ]
+        ]
+      }
+    },
+    {
+      "id": "pg-water",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "water",
+      "filter": [
+        "match",
+        [
+          "get",
+          "natural"
+        ],
+        [
+          "wetland"
+        ],
+        false,
+        [
+          "match",
+          [
+            "geometry-type"
+          ],
+          [
+            "Polygon",
+            "MultiPolygon"
+          ],
+          true,
+          false
+        ]
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          187,
+          222,
+          251
+        ]
+      }
+    },
+    {
+      "id": "ls-boundary-other",
+      "type": "line",
+      "source": "v",
+      "source-layer": "boundary",
+      "filter": [
+        "match",
+        [
+          "get",
+          "admin_level"
+        ],
+        [
+          "2"
+        ],
+        [
+          "match",
+          [
+            "geometry-type"
+          ],
+          [
+            "LineString",
+            "MultiLineString"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          92,
+          99,
+          102
+        ],
+        "line-dasharray": [
+          4,
+          1,
+          1,
+          1
         ]
       }
     }
