@@ -1,0 +1,26 @@
+{
+  id: ls-nature
+  type: line
+  source: v
+  source-layer: nature
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      LineString
+      MultiLineString
+    ]
+    true
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      205
+      220
+      57
+    ]
+  }
+}

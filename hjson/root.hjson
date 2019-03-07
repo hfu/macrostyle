@@ -12,10 +12,6 @@
       attribution: OpenStreetMap contributors
       maxzoom: 15
     }
-    extent: {
-      type: geojson
-      data: https://hfu.github.io/tapioca-extent/extent.geojson
-    }
   }
   sprite: https://hfu.github.io/unite-sprite/sprite
   glyphs: https://vectortiles.xyz/fonts/{fontstack}/{range}.pbf

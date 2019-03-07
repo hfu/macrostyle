@@ -14,10 +14,6 @@
       ],
       "attribution": "OpenStreetMap contributors",
       "maxzoom": 15
-    },
-    "extent": {
-      "type": "geojson",
-      "data": "https://hfu.github.io/tapioca-extent/extent.geojson"
     }
   },
   "sprite": "https://hfu.github.io/unite-sprite/sprite",
@@ -157,6 +153,189 @@
           209,
           196,
           233
+        ]
+      }
+    },
+    {
+      "id": "pg-railway",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "railway",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          225,
+          190,
+          231
+        ]
+      }
+    },
+    {
+      "id": "pg-road",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "road",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          178,
+          223,
+          219
+        ]
+      }
+    },
+    {
+      "id": "pg-route",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "route",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          248,
+          187,
+          208
+        ]
+      }
+    },
+    {
+      "id": "ls-nature",
+      "type": "line",
+      "source": "v",
+      "source-layer": "nature",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          205,
+          220,
+          57
+        ]
+      }
+    },
+    {
+      "id": "pg-water-wetland",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "water",
+      "filter": [
+        "match",
+        [
+          "get",
+          "natural"
+        ],
+        [
+          "wetland"
+        ],
+        [
+          "match",
+          [
+            "geometry-type"
+          ],
+          [
+            "Polygon",
+            "MultiPolygon"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          227,
+          242,
+          253
+        ]
+      }
+    },
+    {
+      "id": "ls-water",
+      "type": "line",
+      "source": "v",
+      "source-layer": "water",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "natural"
+          ],
+          [
+            "coastline"
+          ],
+          [
+            "rgb",
+            33,
+            150,
+            243
+          ],
+          [
+            "rgb",
+            187,
+            222,
+            251
+          ]
         ]
       }
     }

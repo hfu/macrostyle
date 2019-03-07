@@ -1,0 +1,26 @@
+{
+  id: pg-railway
+  type: fill
+  source: v
+  source-layer: railway
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Polygon
+      MultiPolygon
+    ]
+    true
+    false
+  ]
+  paint: {
+    fill-color: [
+      rgb
+      225
+      190
+      231
+    ]
+  }
+}
