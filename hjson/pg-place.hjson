@@ -1,0 +1,27 @@
+{
+  id: pg-place
+  type: fill
+  source: v
+  source-layer: place
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Polygon
+      MultiPolygon
+    ]
+    true
+    false
+  ]
+  paint: {
+    fill-color: [
+      rgba
+      197
+      202
+      233
+      0.2
+    ]
+  }
+}

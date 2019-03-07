@@ -1,0 +1,26 @@
+{
+  id: pg-boundary
+  type: fill
+  source: v
+  source-layer: boundary
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Polygon
+      MultiPolygon
+    ]
+    true
+    false
+  ]
+  paint: {
+    fill-color: [
+      rgb
+      255
+      205
+      210
+    ]
+  }
+}

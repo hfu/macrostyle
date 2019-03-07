@@ -80,6 +80,85 @@
       "paint": {
         "fill-color": "rgb(240, 244, 195)"
       }
+    },
+    {
+      "id": "pg-boundary",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "boundary",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          255,
+          205,
+          210
+        ]
+      }
+    },
+    {
+      "id": "pg-place",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "place",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgba",
+          197,
+          202,
+          233,
+          0.2
+        ]
+      }
+    },
+    {
+      "id": "pg-other",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "other",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          209,
+          196,
+          233
+        ]
+      }
     }
   ]
 }

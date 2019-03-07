@@ -1,0 +1,26 @@
+{
+  id: pg-other
+  type: fill
+  source: v
+  source-layer: other
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Polygon
+      MultiPolygon
+    ]
+    true
+    false
+  ]
+  paint: {
+    fill-color: [
+      rgb
+      209
+      196
+      233
+    ]
+  }
+}
