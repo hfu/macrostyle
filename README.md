@@ -15,9 +15,14 @@ hjson files in hjson directory. root.hjson is the root.
 git clone git@github.com:hfu/macrostyle
 cd macrostyle
 npm install
+npm install -g @mapbox/mapbox-gl-style-spec
 ```
 
 # use
 ```console
-node index.js
+rake
 ```
+
+# test site
+https://hfu.github.io/macrostyle
+
