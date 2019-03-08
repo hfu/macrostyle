@@ -16,6 +16,31 @@
     false
   ]
   paint: {
-    fill-color: rgb(240, 244, 195)
+    fill-color: [
+      match
+      [
+        get
+        landuse
+      ]
+      [
+        residential
+        retail
+        commercial
+        military
+        industrial
+      ]
+      [
+        rgb
+        255
+        236
+        179
+      ]
+      [
+        rgb
+        240
+        244
+        195
+      ]
+    ]
   }
 }

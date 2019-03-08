@@ -16,6 +16,11 @@
     false
   ]
   paint: {
-    fill-color: rgb(255, 249, 196)
+    fill-color: [
+      rgb
+      255
+      249
+      196
+    ]
   }
 }

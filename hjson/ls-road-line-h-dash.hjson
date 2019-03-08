@@ -1,0 +1,50 @@
+{
+  id: ls-road-line-h-dash
+  type: line
+  source: v
+  source-layer: road
+  filter: [
+    match
+    [
+      get
+      highway
+    ]
+    [
+      path
+      pedestrian
+      footway
+      cycleway
+      steps
+      bridleway
+    ]
+    true
+    false
+  ]
+  layout: butt-round
+  paint: {
+    line-color: [
+      rgb
+      255
+      255
+      255
+    ]
+    line-width: [
+      interpolate
+      [
+        exponential
+        2
+      ]
+      [
+        zoom
+      ]
+      6
+      1
+      22
+      64
+    ]
+    line-dasharray: [
+      1.5
+      1.5
+    ]
+  }
+}

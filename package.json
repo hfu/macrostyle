@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/hfu/macrostyle#readme",
   "dependencies": {
-    "hjson": "^3.1.2"
+    "color": "^3.1.0",
+    "hjson": "^3.1.2",
+    "material-colors": "^1.2.6"
   }
 }
