@@ -39,9 +39,9 @@
       "paint": {
         "line-color": [
           "rgb",
-          33,
-          150,
-          243
+          15,
+          135,
+          201
         ]
       }
     },
@@ -1456,6 +1456,68 @@
         "line-dasharray": [
           4,
           4
+        ]
+      }
+    },
+    {
+      "id": "ls-railway-line",
+      "type": "line",
+      "source": "v",
+      "source-layer": "railway",
+      "filter": [
+        "case",
+        [
+          "all",
+          [
+            "!=",
+            [
+              "get",
+              "tunnel"
+            ],
+            "yes"
+          ],
+          [
+            "any",
+            [
+              "!=",
+              [
+                "get",
+                "railway"
+              ],
+              "subway"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "bridge"
+              ],
+              "viaduct"
+            ]
+          ]
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          128,
+          102,
+          125
+        ],
+        "line-width": [
+          "match",
+          [
+            "get",
+            "railway"
+          ],
+          [
+            "narrow_gauge",
+            "light_rail"
+          ],
+          0.5,
+          1
         ]
       }
     }
