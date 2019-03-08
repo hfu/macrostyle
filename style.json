@@ -423,6 +423,116 @@
           1
         ]
       }
+    },
+    {
+      "id": "ls-boundary-international-disputed",
+      "type": "line",
+      "source": "v",
+      "source-layer": "boundary",
+      "filter": [
+        "match",
+        [
+          "get",
+          "disputed"
+        ],
+        [
+          "yes"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "admin_level"
+          ],
+          [
+            "2"
+          ],
+          [
+            "match",
+            [
+              "geometry-type"
+            ],
+            [
+              "LineString",
+              "MultiLineString"
+            ],
+            true,
+            false
+          ],
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          92,
+          99,
+          102
+        ],
+        "line-dasharray": [
+          4,
+          1
+        ],
+        "line-width": 2
+      }
+    },
+    {
+      "id": "ls-boundary-international",
+      "type": "line",
+      "source": "v",
+      "source-layer": "boundary",
+      "filter": [
+        "match",
+        [
+          "get",
+          "disputed"
+        ],
+        [
+          "yes"
+        ],
+        false,
+        [
+          "match",
+          [
+            "get",
+            "admin_level"
+          ],
+          [
+            "2"
+          ],
+          [
+            "match",
+            [
+              "geometry-type"
+            ],
+            [
+              "LineString",
+              "MultiLineString"
+            ],
+            true,
+            false
+          ],
+          false
+        ]
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          92,
+          99,
+          102
+        ],
+        "line-dasharray": [
+          6,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "line-width": 2
+      }
     }
   ]
 }
