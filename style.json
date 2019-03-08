@@ -23,7 +23,12 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "rgb(245, 245, 245)"
+        "background-color": [
+          "rgb",
+          245,
+          245,
+          245
+        ]
       }
     },
     {
@@ -58,7 +63,12 @@
         false
       ],
       "paint": {
-        "fill-color": "rgb(255, 249, 196)"
+        "fill-color": [
+          "rgb",
+          255,
+          249,
+          196
+        ]
       }
     },
     {
@@ -79,7 +89,12 @@
         false
       ],
       "paint": {
-        "fill-color": "rgb(240, 244, 195)"
+        "fill-color": [
+          "rgb",
+          240,
+          244,
+          195
+        ]
       }
     },
     {
