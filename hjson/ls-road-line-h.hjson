@@ -1,0 +1,9 @@
+{
+  id: ls-road-line-h
+  type: line
+  source: v
+  source-layer: road
+  layout: round-round
+  filter: h-filter
+  paint: h-paint
+}
