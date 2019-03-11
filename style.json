@@ -1,5 +1,6 @@
 {
   "version": 8,
+  "id": "tapioca",
   "metadata": {},
   "center": [
     0,
@@ -1989,6 +1990,190 @@
           17,
           0.4
         ]
+      }
+    },
+    {
+      "id": "pg-building-outline",
+      "type": "line",
+      "source": "v",
+      "source-layer": "building",
+      "minzoom": 14,
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          183,
+          174,
+          174
+        ],
+        "line-width": 1
+      }
+    },
+    {
+      "id": "pt-nature",
+      "type": "symbol",
+      "source": "v",
+      "source-layer": "nature",
+      "minzoom": 18,
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Point",
+          "MultiPoint"
+        ],
+        true,
+        false
+      ],
+      "layout": {
+        "icon-image": [
+          "match",
+          [
+            "get",
+            "natural"
+          ],
+          [
+            "tree"
+          ],
+          "park",
+          "default"
+        ]
+      }
+    },
+    {
+      "id": "pt-water",
+      "type": "circle",
+      "source": "v",
+      "source-layer": "water",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Point",
+          "MultiPoint"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "circle-color": [
+          "rgb",
+          13,
+          71,
+          161
+        ],
+        "circle-radius": 2.5
+      }
+    },
+    {
+      "id": "pt-boundary",
+      "type": "circle",
+      "source": "v",
+      "source-layer": "boundary",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Point",
+          "MultiPoint"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "circle-color": [
+          "rgb",
+          183,
+          28,
+          28
+        ],
+        "circle-radius": 2.5
+      }
+    },
+    {
+      "id": "pt-road",
+      "type": "symbol",
+      "source": "v",
+      "source-layer": "road",
+      "minzoom": 17,
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Point",
+          "MultiPoint"
+        ],
+        true,
+        false
+      ],
+      "layout": {
+        "icon-image": [
+          "match",
+          [
+            "get",
+            "highway"
+          ],
+          [
+            "bus_stop"
+          ],
+          "bus_stop",
+          "default"
+        ],
+        "text-field": [
+          "step",
+          [
+            "zoom"
+          ],
+          "",
+          17,
+          [
+            "get",
+            "name"
+          ]
+        ],
+        "text-anchor": "top",
+        "text-font": [
+          "sans"
+        ],
+        "text-offset": [
+          0,
+          1
+        ],
+        "text-size": 9
+      },
+      "paint": {
+        "text-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "text-halo-color": [
+          "rgb",
+          238,
+          238,
+          238
+        ],
+        "text-halo-width": 1
       }
     }
   ]
