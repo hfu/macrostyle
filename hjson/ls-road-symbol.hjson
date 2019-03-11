@@ -17,10 +17,24 @@
   ]
   layout: {
     symbol-placement: line
+    symbol-spacing: 600
     text-font: [
       sans
     ]
-    text-size: 8
+    text-size: [
+      interpolate
+      [
+        exponential
+        2
+      ]
+      [
+        zoom
+      ]
+      15
+      8
+      22
+      60
+    ]
     text-field: "{name}"
     text-optional: true
     text-offset: [
@@ -66,5 +80,6 @@
       238
       238
     ]
+    text-halo-width: 0.5
   }
 }

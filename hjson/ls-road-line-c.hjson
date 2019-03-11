@@ -1,0 +1,50 @@
+{
+  id: ls-road-line-c
+  type: line
+  source: v
+  source-layer: road
+  layout: round-round
+  filter: [
+    match
+    [
+      get
+      highway
+    ]
+    [
+      primary
+      trunk_link
+    ]
+    [
+      case
+      [
+        has
+        layer
+      ]
+      false
+      true
+    ]
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      204
+      184
+      192
+    ]
+    line-width: [
+      interpolate
+      [
+        exponential
+        2
+      ]
+      [
+        zoom
+      ]
+      6
+      1
+      22
+      312
+    ]
+  }
+}

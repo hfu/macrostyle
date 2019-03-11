@@ -1,0 +1,51 @@
+{
+  id: ls-road-line-g
+  type: line
+  source: v
+  source-layer: road
+  layout: round-round
+  filter: [
+    match
+    [
+      get
+      highway
+    ]
+    [
+      residential
+      track
+      unclassified
+    ]
+    [
+      case
+      [
+        has
+        layer
+      ]
+      false
+      true
+    ]
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      235
+      235
+      235
+    ]
+    line-width: [
+      interpolate
+      [
+        exponential
+        2
+      ]
+      [
+        zoom
+      ]
+      6
+      1
+      22
+      216
+    ]
+  }
+}

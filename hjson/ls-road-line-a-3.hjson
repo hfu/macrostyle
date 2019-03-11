@@ -1,0 +1,52 @@
+{
+  id: ls-road-line-a-3
+  type: line
+  source: v
+  source-layer: road
+  layout: butt-round
+  filter: [
+    match
+    [
+      get
+      highway
+    ]
+    [
+      motorway
+    ]
+    [
+      match
+      [
+        get
+        layer
+      ]
+      [
+        "3"
+      ]
+      true
+      false
+    ]
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      204
+      122
+      155
+    ]
+    line-width: [
+      interpolate
+      [
+        exponential
+        2
+      ]
+      [
+        zoom
+      ]
+      6
+      1
+      22
+      360
+    ]
+  }
+}

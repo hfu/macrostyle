@@ -1,0 +1,53 @@
+{
+  id: ls-road-line-b-4
+  type: line
+  source: v
+  source-layer: road
+  layout: butt-round
+  filter: [
+    match
+    [
+      get
+      highway
+    ]
+    [
+      trunk
+      motorway_link
+    ]
+    [
+      match
+      [
+        get
+        layer
+      ]
+      [
+        "4"
+      ]
+      true
+      false
+    ]
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      204
+      122
+      155
+    ]
+    line-width: [
+      interpolate
+      [
+        exponential
+        2
+      ]
+      [
+        zoom
+      ]
+      6
+      1
+      22
+      312
+    ]
+  }
+}
