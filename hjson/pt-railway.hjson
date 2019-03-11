@@ -1,0 +1,70 @@
+{
+  id: pt-railway
+  type: symbol
+  source: v
+  source-layer: railway
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Point
+      MultiPoint
+    ]
+    true
+    false
+  ]
+  layout: {
+    icon-image: [
+      match
+      [
+        get
+        railway
+      ]
+      station
+      railway_station
+      halt
+      halt
+      tram_stop
+      tram_stop
+      default
+    ]
+    text-field: [
+      step
+      [
+        zoom
+      ]
+      ''
+      15
+      [
+        get
+        name
+      ]
+    ]
+    text-anchor: top
+    text-font: [
+      sans
+    ]
+    text-offset: [
+      0
+      1
+    ]
+    text-size: 12
+  }
+  paint: {
+    text-color: [
+      rgb
+      0
+      0
+      0
+    ]
+    text-halo-color: [
+      rgb
+      238
+      238
+      238
+    ]
+    text-halo-width: 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  id: pt-building
+  type: circle
+  source: v
+  source-layer: building
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Point
+      MultiPoint
+    ]
+    true
+    false
+  ]
+  paint: {
+    circle-color: [
+      rgb
+      183
+      174
+      174
+    ]
+    circle-radius: 2
+  }
+}

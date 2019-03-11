@@ -1,0 +1,27 @@
+{
+  id: pt-route
+  type: circle
+  source: v
+  source-layer: route
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Point
+      MultiPoint
+    ]
+    true
+    false
+  ]
+  paint: {
+    circle-color: [
+      rgb
+      136
+      14
+      79
+    ]
+    circle-radius: 2.5
+  }
+}

@@ -1,0 +1,70 @@
+{
+  id: ls-road-symbol
+  type: symbol
+  source: v
+  source-layer: road
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      LineString
+      MultiLineString
+    ]
+    true
+    false
+  ]
+  layout: {
+    symbol-placement: line
+    text-font: [
+      sans
+    ]
+    text-size: 8
+    text-field: "{name}"
+    text-optional: true
+    text-offset: [
+      step
+      [
+        zoom
+      ]
+      [
+        literal
+        [
+          0
+          -0.5
+        ]
+      ]
+      16
+      [
+        literal
+        [
+          0
+          -1
+        ]
+      ]
+      17
+      [
+        literal
+        [
+          0
+          0
+        ]
+      ]
+    ]
+  }
+  paint: {
+    text-color: [
+      rgb
+      97
+      97
+      97
+    ]
+    text-halo-color: [
+      rgb
+      238
+      238
+      238
+    ]
+  }
+}
