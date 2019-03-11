@@ -1610,7 +1610,18 @@
           "runway"
         ],
         false,
-        true
+        [
+          "match",
+          [
+            "geometry-type"
+          ],
+          [
+            "Polygon",
+            "MultiPolygon"
+          ],
+          true,
+          false
+        ]
       ],
       "paint": {
         "line-color": [
