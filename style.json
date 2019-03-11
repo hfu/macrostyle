@@ -1740,6 +1740,116 @@
           174
         ]
       }
+    },
+    {
+      "id": "ls-place",
+      "type": "line",
+      "source": "v",
+      "source-layer": "place",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          63,
+          81,
+          181
+        ]
+      }
+    },
+    {
+      "id": "ls-other",
+      "type": "line",
+      "source": "v",
+      "source-layer": "other",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          103,
+          58,
+          183
+        ]
+      }
+    },
+    {
+      "id": "pg-building-shadow",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "building",
+      "minzoom": 16,
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "-1",
+            "-2",
+            "-3",
+            "-4",
+            "-5"
+          ],
+          false,
+          [
+            "match",
+            [
+              "get",
+              "building"
+            ],
+            [
+              "train_station",
+              "roof"
+            ],
+            false,
+            true
+          ]
+        ],
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          131,
+          124,
+          124
+        ],
+        "fill-translate": [
+          2,
+          2
+        ]
+      }
     }
   ]
 }
