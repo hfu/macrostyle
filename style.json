@@ -1530,6 +1530,59 @@
       }
     },
     {
+      "id": "ls-road-line-e",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "tertiary",
+          "secondary_link"
+        ],
+        [
+          "case",
+          [
+            "has",
+            "layer"
+          ],
+          false,
+          true
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          223,
+          208,
+          214
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          288
+        ]
+      }
+    },
+    {
       "id": "ls-road-case-1",
       "type": "line",
       "source": "v",
@@ -1757,7 +1810,7 @@
       "source": "v",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -1804,6 +1857,62 @@
           1,
           22,
           240
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-e-1",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "tertiary",
+          "secondary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "1"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          223,
+          208,
+          214
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          288
         ]
       }
     },
@@ -2035,7 +2144,7 @@
       "source": "v",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -2082,6 +2191,62 @@
           1,
           22,
           240
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-e-2",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "tertiary",
+          "secondary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "2"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          223,
+          208,
+          214
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          288
         ]
       }
     },
@@ -2313,7 +2478,7 @@
       "source": "v",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -2360,6 +2525,62 @@
           1,
           22,
           240
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-e-3",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "tertiary",
+          "secondary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "3"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          223,
+          208,
+          214
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          288
         ]
       }
     },
@@ -2591,7 +2812,7 @@
       "source": "v",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -2638,6 +2859,62 @@
           1,
           22,
           240
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-e-4",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "tertiary",
+          "secondary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "4"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          223,
+          208,
+          214
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          288
         ]
       }
     },
@@ -2869,7 +3146,7 @@
       "source": "v",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -2916,6 +3193,62 @@
           1,
           22,
           240
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-e-5",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "tertiary",
+          "secondary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "5"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          223,
+          208,
+          214
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          288
         ]
       }
     },
