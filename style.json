@@ -1703,6 +1703,20 @@
           1440
         ]
       }
+    },
+    {
+      "id": "ls-building",
+      "type": "line",
+      "source": "v",
+      "source-layer": "building",
+      "paint": {
+        "line-color": [
+          "rgb",
+          183,
+          174,
+          174
+        ]
+      }
     }
   ]
 }
