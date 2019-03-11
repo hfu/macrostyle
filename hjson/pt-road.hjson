@@ -1,0 +1,69 @@
+{
+  id: pt-road
+  type: symbol
+  source: v
+  source-layer: road
+  minzoom: 17
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Point
+      MultiPoint
+    ]
+    true
+    false
+  ]
+  layout: {
+    icon-image: [
+      match
+      [
+        get
+        highway
+      ]
+      [
+        bus_stop
+      ]
+      bus_stop
+      default
+    ]
+    text-field: [
+      step
+      [
+        zoom
+      ]
+      ''
+      17
+      [
+        get
+        name
+      ]
+    ]
+    text-anchor: top
+    text-font: [
+      sans
+    ]
+    text-offset: [
+      0
+      1
+    ]
+    text-size: 9
+  }
+  paint: {
+    text-color: [
+      rgb
+      0
+      0
+      0
+    ]
+    text-halo-color: [
+      rgb
+      238
+      238
+      238
+    ]
+    text-halo-width: 1
+  }
+}

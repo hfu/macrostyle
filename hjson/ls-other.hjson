@@ -1,8 +1,8 @@
 {
-  id: ls-building
+  id: ls-other
   type: line
   source: v
-  source-layer: building
+  source-layer: other
   filter: [
     match
     [
@@ -18,9 +18,9 @@
   paint: {
     line-color: [
       rgb
+      103
+      58
       183
-      174
-      174
     ]
   }
 }

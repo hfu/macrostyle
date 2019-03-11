@@ -1,8 +1,8 @@
 {
-  id: ls-building
+  id: ls-place
   type: line
   source: v
-  source-layer: building
+  source-layer: place
   filter: [
     match
     [
@@ -18,9 +18,9 @@
   paint: {
     line-color: [
       rgb
-      183
-      174
-      174
+      63
+      81
+      181
     ]
   }
 }

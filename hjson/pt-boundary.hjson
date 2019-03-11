@@ -1,0 +1,27 @@
+{
+  id: pt-boundary
+  type: circle
+  source: v
+  source-layer: boundary
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Point
+      MultiPoint
+    ]
+    true
+    false
+  ]
+  paint: {
+    circle-color: [
+      rgb
+      183
+      28
+      28
+    ]
+    circle-radius: 2.5
+  }
+}

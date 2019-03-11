@@ -1,0 +1,27 @@
+{
+  id: pt-water
+  type: circle
+  source: v
+  source-layer: water
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Point
+      MultiPoint
+    ]
+    true
+    false
+  ]
+  paint: {
+    circle-color: [
+      rgb
+      13
+      71
+      161
+    ]
+    circle-radius: 2.5
+  }
+}

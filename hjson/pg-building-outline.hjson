@@ -1,16 +1,17 @@
 {
-  id: ls-building
+  id: pg-building-outline
   type: line
   source: v
   source-layer: building
+  minzoom: 14
   filter: [
     match
     [
       geometry-type
     ]
     [
-      LineString
-      MultiLineString
+      Polygon
+      MultiPolygon
     ]
     true
     false
@@ -22,5 +23,6 @@
       174
       174
     ]
+    line-width: 1
   }
 }
