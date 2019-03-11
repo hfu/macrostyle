@@ -1616,8 +1616,8 @@
             "geometry-type"
           ],
           [
-            "Polygon",
-            "MultiPolygon"
+            "LineString",
+            "MultiLineString"
           ],
           true,
           false
@@ -1720,6 +1720,18 @@
       "type": "line",
       "source": "v",
       "source-layer": "building",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        true,
+        false
+      ],
       "paint": {
         "line-color": [
           "rgb",
