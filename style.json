@@ -1583,6 +1583,59 @@
       }
     },
     {
+      "id": "ls-road-line-d",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "secondary",
+          "primary_link"
+        ],
+        [
+          "case",
+          [
+            "has",
+            "layer"
+          ],
+          false,
+          true
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          204,
+          184,
+          192
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          288
+        ]
+      }
+    },
+    {
       "id": "ls-road-case-1",
       "type": "line",
       "source": "v",
@@ -1899,6 +1952,62 @@
           223,
           208,
           214
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          288
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-d-1",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "secondary",
+          "primary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "1"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          204,
+          184,
+          192
         ],
         "line-width": [
           "interpolate",
