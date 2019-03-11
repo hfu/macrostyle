@@ -2030,6 +2030,62 @@
       }
     },
     {
+      "id": "ls-road-line-f-2",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "road",
+          "tertiary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "2"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          255,
+          255,
+          255
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          240
+        ]
+      }
+    },
+    {
       "id": "ls-road-case-3",
       "type": "line",
       "source": "v",
@@ -2248,6 +2304,62 @@
           1,
           22,
           216
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-f-3",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "road",
+          "tertiary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "3"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          255,
+          255,
+          255
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          240
         ]
       }
     },
@@ -2474,6 +2586,62 @@
       }
     },
     {
+      "id": "ls-road-line-f-4",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "road",
+          "tertiary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "4"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          255,
+          255,
+          255
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          240
+        ]
+      }
+    },
+    {
       "id": "ls-road-case-5",
       "type": "line",
       "source": "v",
@@ -2692,6 +2860,62 @@
           1,
           22,
           216
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-f-5",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "road",
+          "tertiary_link"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "5"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          255,
+          255,
+          255
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          240
         ]
       }
     },
@@ -3626,7 +3850,20 @@
         "text-font": [
           "sans"
         ],
-        "text-size": 8,
+        "text-size": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          8,
+          22,
+          60
+        ],
         "text-field": "{name}",
         "text-optional": true,
         "text-offset": [
