@@ -1423,6 +1423,60 @@
       }
     },
     {
+      "id": "ls-road-line-g",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "residential",
+          "track",
+          "unclassified"
+        ],
+        [
+          "case",
+          [
+            "has",
+            "layer"
+          ],
+          false,
+          true
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          235,
+          235,
+          235
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          216
+        ]
+      }
+    },
+    {
       "id": "ls-road-case-1",
       "type": "line",
       "source": "v",
@@ -1584,6 +1638,63 @@
             240,
             72
           ]
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-g-1",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "residential",
+          "track",
+          "unclassified"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "1"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          235,
+          235,
+          235
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          216
         ]
       }
     },
