@@ -1,0 +1,40 @@
+{
+  id: ls-structure-taxiway
+  type: line
+  source: v
+  source-layer: structure
+  filter: [
+    match
+    [
+      get
+      aeroway
+    ]
+    [
+      taxiway
+    ]
+    true
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      166
+      133
+      162
+    ]
+    line-width: [
+      interpolate
+      [
+        exponential
+        2
+      ]
+      [
+        zoom
+      ]
+      12
+      2
+      22
+      576
+    ]
+  }
+}

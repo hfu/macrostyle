@@ -49,8 +49,10 @@ for (let i in style.layers) {
       style.layers[i].filter = replace(macros, style.layers[i].filter)
       style.layers[i].layout = replace(macros, style.layers[i].layout)
       style.layers[i].paint = replace(macros, style.layers[i].paint)
+/*
       style.layers[i].paint['fill-color'] =
         replace(colors, style.layers[i].paint['fill-color'])
+        */
     } else {
       errorCount++
       console.log(`${errorCount}: ${hjsonPath} not found. Skip.`)

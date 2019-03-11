@@ -1,0 +1,27 @@
+{
+  id: ls-structure
+  type: line
+  source: v
+  source-layer: structure
+  filter: [
+    match
+    [
+      get
+      aeroway
+    ]
+    [
+      taxiway
+      runway
+    ]
+    false
+    true
+  ]
+  paint: {
+    line-color: [
+      rgb
+      158
+      158
+      158
+    ]
+  }
+}

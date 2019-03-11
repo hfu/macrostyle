@@ -1593,6 +1593,116 @@
           6
         ]
       }
+    },
+    {
+      "id": "ls-structure",
+      "type": "line",
+      "source": "v",
+      "source-layer": "structure",
+      "filter": [
+        "match",
+        [
+          "get",
+          "aeroway"
+        ],
+        [
+          "taxiway",
+          "runway"
+        ],
+        false,
+        true
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          158,
+          158,
+          158
+        ]
+      }
+    },
+    {
+      "id": "ls-structure-taxiway",
+      "type": "line",
+      "source": "v",
+      "source-layer": "structure",
+      "filter": [
+        "match",
+        [
+          "get",
+          "aeroway"
+        ],
+        [
+          "taxiway"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          166,
+          133,
+          162
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2,
+          22,
+          576
+        ]
+      }
+    },
+    {
+      "id": "ls-structure-runway",
+      "type": "line",
+      "source": "v",
+      "source-layer": "structure",
+      "filter": [
+        "match",
+        [
+          "get",
+          "runway"
+        ],
+        [
+          "runway"
+        ],
+        true,
+        false
+      ],
+      "layout": {
+        "line-cap": "square"
+      },
+      "paint": {
+        "line-color": [
+          "rgb",
+          128,
+          102,
+          125
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          5,
+          22,
+          1440
+        ]
+      }
     }
   ]
 }

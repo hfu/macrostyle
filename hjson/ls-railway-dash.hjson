@@ -1,0 +1,54 @@
+{
+  id: ls-railway-dash
+  type: line
+  source: v
+  source-layer: railway
+  filter: [
+    case
+    [
+      all
+      [
+        !=
+        [
+          get
+          tunnel
+        ]
+        yes
+      ]
+      [
+        any
+        [
+          !=
+          [
+            get
+            railway
+          ]
+          subway
+        ]
+        [
+          ==
+          [
+            get
+            bridge
+          ]
+          viaduct
+        ]
+      ]
+    ]
+    true
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      128
+      102
+      125
+    ]
+    line-width: 2
+    line-dasharray: [
+      1
+      5
+    ]
+  }
+}
