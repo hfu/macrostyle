@@ -1742,6 +1742,58 @@
       }
     },
     {
+      "id": "ls-road-line-a",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "motorway"
+        ],
+        [
+          "case",
+          [
+            "has",
+            "layer"
+          ],
+          false,
+          true
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          204,
+          122,
+          155
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          360
+        ]
+      }
+    },
+    {
       "id": "ls-road-case-1",
       "type": "line",
       "source": "v",
@@ -2240,6 +2292,61 @@
           1,
           22,
           312
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-a-1",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "motorway"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "1"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          204,
+          122,
+          155
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          360
         ]
       }
     },
@@ -2746,6 +2853,61 @@
       }
     },
     {
+      "id": "ls-road-line-a-2",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "motorway"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "2"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          204,
+          122,
+          155
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          360
+        ]
+      }
+    },
+    {
       "id": "ls-road-case-3",
       "type": "line",
       "source": "v",
@@ -3244,6 +3406,61 @@
           1,
           22,
           312
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-a-3",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "motorway"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "3"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          204,
+          122,
+          155
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          360
         ]
       }
     },
@@ -3750,6 +3967,61 @@
       }
     },
     {
+      "id": "ls-road-line-a-4",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "motorway"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "4"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          204,
+          122,
+          155
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          360
+        ]
+      }
+    },
+    {
       "id": "ls-road-case-5",
       "type": "line",
       "source": "v",
@@ -4248,6 +4520,61 @@
           1,
           22,
           312
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-a-5",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        [
+          "get",
+          "highway"
+        ],
+        [
+          "motorway"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "layer"
+          ],
+          [
+            "5"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          204,
+          122,
+          155
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          22,
+          360
         ]
       }
     },
