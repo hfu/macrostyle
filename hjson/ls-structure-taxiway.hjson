@@ -12,7 +12,18 @@
     [
       taxiway
     ]
-    true
+    [
+      match
+      [
+        geometry-type
+      ]
+      [
+        LineString
+        MultiLineString
+      ]
+      true
+      false
+    ]
     false
   ]
   paint: {
