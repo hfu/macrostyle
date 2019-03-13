@@ -5615,7 +5615,6 @@
         false
       ],
       "layout": {
-        "symbol-avoid-edges": true,
         "icon-image": [
           "match",
           [
