@@ -16,6 +16,7 @@
     false
   ]
   layout: {
+    symbol-avoid-edges: true
     symbol-placement: line
     symbol-spacing: 600
     text-font: [
