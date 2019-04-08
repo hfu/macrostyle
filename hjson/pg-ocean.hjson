@@ -1,0 +1,26 @@
+{
+  id: pg-ocean
+  type: fill
+  source: v
+  source-layer: ocean
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Polygon
+      MultiPolygon
+    ]
+    true
+    false
+  ]
+  paint: {
+    fill-color: [
+      rgb
+      187
+      222
+      251
+    ]
+  }
+}

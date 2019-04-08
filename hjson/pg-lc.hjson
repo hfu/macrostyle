@@ -1,0 +1,68 @@
+{
+  id: pg-lc
+  type: fill
+  source: v
+  source-layer: lc
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Polygon
+      MultiPolygon
+    ]
+    true
+    false
+  ]
+  paint: {
+    fill-color: [
+      match
+      [
+        get
+        gridcode
+      ]
+      10
+      [
+        rgb
+        226
+        242
+        226
+      ]
+      20
+      [
+        rgb
+        219
+        237
+        208
+      ]
+      30
+      [
+        rgb
+        237
+        242
+        226
+      ]
+      40
+      [
+        rgb
+        240
+        240
+        182
+      ]
+      80
+      [
+        rgb
+        242
+        237
+        237
+      ]
+      [
+        rgb
+        0
+        0
+        0
+      ]
+    ]
+  }
+}

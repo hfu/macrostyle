@@ -1,0 +1,26 @@
+{
+  id: ls-bndl
+  type: line
+  source: v
+  source-layer: bndl
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      LineString
+      MultiLineString
+    ]
+    true
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      244
+      67
+      54
+    ]
+  }
+}

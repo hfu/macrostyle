@@ -1,0 +1,26 @@
+{
+  id: ls-un-road
+  type: line
+  source: v
+  source-layer: un-road
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      LineString
+      MultiLineString
+    ]
+    true
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      0
+      150
+      136
+    ]
+  }
+}

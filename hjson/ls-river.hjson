@@ -1,0 +1,26 @@
+{
+  id: ls-river
+  type: line
+  source: v
+  source-layer: river
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      LineString
+      MultiLineString
+    ]
+    true
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      33
+      150
+      243
+    ]
+  }
+}

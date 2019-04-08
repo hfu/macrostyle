@@ -1,0 +1,36 @@
+{
+  id: pg-hs
+  type: fill
+  source: v
+  source-layer: hs
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      Polygon
+      MultiPolygon
+    ]
+    true
+    false
+  ]
+  paint: {
+    fill-color: [
+      rgba
+      [
+        get
+        gridcode
+      ]
+      [
+        get
+        gridcode
+      ]
+      [
+        get
+        gridcode
+      ]
+      0.2
+    ]
+  }
+}

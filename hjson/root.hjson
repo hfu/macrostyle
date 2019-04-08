@@ -8,7 +8,8 @@
     v: {
       type: vector
       tiles: [
-        https://vectortiles.xyz/zxy/tapioca/{z}/{x}/{y}.pbf
+          https://127.0.0.1/zxy/{z}/{x}/{y}.pbf
+//        https://vectortiles.xyz/zxy/tapioca/{z}/{x}/{y}.pbf
       ]
       attribution: OpenStreetMap contributors
       maxzoom: 15
@@ -21,6 +22,8 @@
     Coastline
     pg-structure
     pg-nature
+    pg-lc
+    pg-hs
     pg-boundary
     pg-place
     pg-other
@@ -30,10 +33,13 @@
     ls-nature
     pg-water-wetland
     ls-water
+    ls-river
+    pg-ocean
     pg-water
     ls-boundary-other
     ls-boundary-international-disputed
     ls-boundary-international
+    ls-bndl
     ls-road-line-h
     ls-road-line-h-dash
     ls-road-case-underground
@@ -92,6 +98,7 @@
     ls-road-line-c-5
     ls-road-line-b-5
     ls-road-line-a-5
+    ls-un-road
     ls-railway-subway
     ls-railway-line
     ls-railway-dash
@@ -116,6 +123,9 @@
     pt-building
     ls-road-symbol
     pt-place
+    pt-un-place
+    pt-popp
+    pt-bndp
     pt-other
   ]
 }

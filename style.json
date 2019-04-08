@@ -11,7 +11,7 @@
     "v": {
       "type": "vector",
       "tiles": [
-        "https://vectortiles.xyz/zxy/tapioca/{z}/{x}/{y}.pbf"
+        "https://127.0.0.1/zxy/{z}/{x}/{y}.pbf"
       ],
       "attribution": "OpenStreetMap contributors",
       "maxzoom": 15
@@ -115,6 +115,110 @@
             244,
             195
           ]
+        ]
+      }
+    },
+    {
+      "id": "pg-lc",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "lc",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "gridcode"
+          ],
+          10,
+          [
+            "rgb",
+            226,
+            242,
+            226
+          ],
+          20,
+          [
+            "rgb",
+            219,
+            237,
+            208
+          ],
+          30,
+          [
+            "rgb",
+            237,
+            242,
+            226
+          ],
+          40,
+          [
+            "rgb",
+            240,
+            240,
+            182
+          ],
+          80,
+          [
+            "rgb",
+            242,
+            237,
+            237
+          ],
+          [
+            "rgb",
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pg-hs",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "hs",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgba",
+          [
+            "get",
+            "gridcode"
+          ],
+          [
+            "get",
+            "gridcode"
+          ],
+          [
+            "get",
+            "gridcode"
+          ],
+          0.2
         ]
       }
     },
@@ -381,6 +485,58 @@
       }
     },
     {
+      "id": "ls-river",
+      "type": "line",
+      "source": "v",
+      "source-layer": "river",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          33,
+          150,
+          243
+        ]
+      }
+    },
+    {
+      "id": "pg-ocean",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "ocean",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Polygon",
+          "MultiPolygon"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "fill-color": [
+          "rgb",
+          187,
+          222,
+          251
+        ]
+      }
+    },
+    {
       "id": "pg-water",
       "type": "fill",
       "source": "v",
@@ -568,6 +724,32 @@
           1
         ],
         "line-width": 2
+      }
+    },
+    {
+      "id": "ls-bndl",
+      "type": "line",
+      "source": "v",
+      "source-layer": "bndl",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          244,
+          67,
+          54
+        ]
       }
     },
     {
@@ -4579,6 +4761,32 @@
       }
     },
     {
+      "id": "ls-un-road",
+      "type": "line",
+      "source": "v",
+      "source-layer": "un-road",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          150,
+          136
+        ]
+      }
+    },
+    {
       "id": "ls-railway-subway",
       "type": "line",
       "source": "v",
@@ -6024,6 +6232,87 @@
           238
         ],
         "text-halo-width": 1
+      }
+    },
+    {
+      "id": "pt-un-place",
+      "type": "circle",
+      "source": "v",
+      "source-layer": "un-place",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Point",
+          "MultiPoint"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "circle-color": [
+          "rgb",
+          26,
+          35,
+          126
+        ],
+        "circle-radius": 2.5
+      }
+    },
+    {
+      "id": "pt-popp",
+      "type": "circle",
+      "source": "v",
+      "source-layer": "popp",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Point",
+          "MultiPoint"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "circle-color": [
+          "rgb",
+          26,
+          35,
+          126
+        ],
+        "circle-radius": 2.5
+      }
+    },
+    {
+      "id": "pt-bndp",
+      "type": "circle",
+      "source": "v",
+      "source-layer": "bndp",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "Point",
+          "MultiPoint"
+        ],
+        true,
+        false
+      ],
+      "paint": {
+        "circle-color": [
+          "rgb",
+          26,
+          35,
+          126
+        ],
+        "circle-radius": 2.5
       }
     },
     {
