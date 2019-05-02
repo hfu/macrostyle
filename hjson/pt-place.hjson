@@ -414,9 +414,9 @@
   paint: {
     text-color: [
       rgb
-      0
-      0
-      0
+      189
+      188
+      188
     ]
     text-halo-color: [
       rgb

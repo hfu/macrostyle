@@ -1,25 +1,25 @@
 {
-  id: ls-boundary-other
+  id: ls-bndl-international-disputed
   type: line
   source: v
-  source-layer: boundary
+  source-layer: bndl
   filter: [
     match
     [
-      get
-      admin_level
+      geometry-type
     ]
     [
-      '2'
+      LineString
+      MultiLineString
     ]
     [
       match
       [
-        geometry-type
+        get
+        bdytyp_code
       ]
       [
-        LineString
-        MultiLineString
+        '2'
       ]
       true
       false
@@ -34,13 +34,10 @@
       102
     ]
     line-dasharray: [
-      4
-      1
-      1
-      1
+      8
+      2
+      2
+      2
     ]
-  }
-  layout: {
-    visibility: none
   }
 }

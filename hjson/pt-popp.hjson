@@ -1,6 +1,6 @@
 {
   id: pt-popp
-  type: circle
+  type: symbol
   source: v
   source-layer: popp
   filter: [
@@ -15,13 +15,29 @@
     true
     false
   ]
-  paint: {
-    circle-color: [
-      rgb
-      26
-      35
-      126
+  layout: {
+    text-field: [
+      get
+      cartolb
     ]
-    circle-radius: 2.5
+    text-font: [
+      sans
+    ]
+    text-size: 12
+  }
+  paint: {
+    text-color: [
+      rgb
+      247
+      147
+      33
+    ]
+    text-halo-color: [
+      rgb
+      238
+      238
+      238
+    ]
+    text-halo-width: 1
   }
 }

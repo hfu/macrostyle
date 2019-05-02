@@ -37,6 +37,7 @@
       "type": "line",
       "source": "v",
       "source-layer": "Coastline",
+      "maxzoom": 2,
       "paint": {
         "line-color": [
           "rgb",
@@ -177,11 +178,61 @@
             237,
             237
           ],
+          100,
           [
             "rgb",
-            0,
-            0,
-            0
+            237,
+            242,
+            226
+          ],
+          250,
+          [
+            "rgb",
+            219,
+            237,
+            208
+          ],
+          255,
+          [
+            "rgb",
+            219,
+            237,
+            208
+          ],
+          [
+            "match",
+            [
+              "get",
+              "landcover"
+            ],
+            "Grassland",
+            [
+              "rgb",
+              237,
+              242,
+              226
+            ],
+            "Forest",
+            [
+              "rgb",
+              219,
+              237,
+              208
+            ],
+            "Artificial_surfaces",
+            [
+              "rgb",
+              242,
+              237,
+              237
+            ],
+            [
+              "rgba",
+              0,
+              0,
+              0,
+              0
+            ]
           ]
         ]
       }
@@ -447,6 +498,7 @@
       "type": "line",
       "source": "v",
       "source-layer": "water",
+      "minzoom": 14,
       "filter": [
         "match",
         [
@@ -574,27 +626,33 @@
       }
     },
     {
-      "id": "ls-boundary-other",
+      "id": "ls-bndl-other",
       "type": "line",
       "source": "v",
-      "source-layer": "boundary",
+      "source-layer": "bndl",
       "filter": [
         "match",
         [
-          "get",
-          "admin_level"
+          "geometry-type"
         ],
         [
-          "2"
+          "LineString",
+          "MultiLineString"
         ],
         [
           "match",
           [
-            "geometry-type"
+            "get",
+            "bdytyp_code"
           ],
           [
-            "LineString",
-            "MultiLineString"
+            "3",
+            "4",
+            "6",
+            "7",
+            "8",
+            "9",
+            "99"
           ],
           true,
           false
@@ -609,125 +667,15 @@
           102
         ],
         "line-dasharray": [
-          4,
-          1,
-          1,
-          1
+          8,
+          2,
+          2,
+          2
         ]
       }
     },
     {
-      "id": "ls-boundary-international-disputed",
-      "type": "line",
-      "source": "v",
-      "source-layer": "boundary",
-      "filter": [
-        "match",
-        [
-          "get",
-          "disputed"
-        ],
-        [
-          "yes"
-        ],
-        [
-          "match",
-          [
-            "get",
-            "admin_level"
-          ],
-          [
-            "2"
-          ],
-          [
-            "match",
-            [
-              "geometry-type"
-            ],
-            [
-              "LineString",
-              "MultiLineString"
-            ],
-            true,
-            false
-          ],
-          false
-        ],
-        false
-      ],
-      "paint": {
-        "line-color": [
-          "rgb",
-          92,
-          99,
-          102
-        ],
-        "line-dasharray": [
-          4,
-          1
-        ],
-        "line-width": 2
-      }
-    },
-    {
-      "id": "ls-boundary-international",
-      "type": "line",
-      "source": "v",
-      "source-layer": "boundary",
-      "filter": [
-        "match",
-        [
-          "get",
-          "disputed"
-        ],
-        [
-          "yes"
-        ],
-        false,
-        [
-          "match",
-          [
-            "get",
-            "admin_level"
-          ],
-          [
-            "2"
-          ],
-          [
-            "match",
-            [
-              "geometry-type"
-            ],
-            [
-              "LineString",
-              "MultiLineString"
-            ],
-            true,
-            false
-          ],
-          false
-        ]
-      ],
-      "paint": {
-        "line-color": [
-          "rgb",
-          92,
-          99,
-          102
-        ],
-        "line-dasharray": [
-          6,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        "line-width": 2
-      }
-    },
-    {
-      "id": "ls-bndl",
+      "id": "ls-bndl-international-disputed",
       "type": "line",
       "source": "v",
       "source-layer": "bndl",
@@ -740,15 +688,69 @@
           "LineString",
           "MultiLineString"
         ],
-        true,
+        [
+          "match",
+          [
+            "get",
+            "bdytyp_code"
+          ],
+          [
+            "2"
+          ],
+          true,
+          false
+        ],
         false
       ],
       "paint": {
         "line-color": [
           "rgb",
-          244,
-          67,
-          54
+          92,
+          99,
+          102
+        ],
+        "line-dasharray": [
+          8,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "ls-bndl-international",
+      "type": "line",
+      "source": "v",
+      "source-layer": "bndl",
+      "filter": [
+        "match",
+        [
+          "geometry-type"
+        ],
+        [
+          "LineString",
+          "MultiLineString"
+        ],
+        [
+          "match",
+          [
+            "get",
+            "bdytyp_code"
+          ],
+          [
+            "1"
+          ],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          92,
+          99,
+          102
         ]
       }
     },
@@ -6221,9 +6223,9 @@
       "paint": {
         "text-color": [
           "rgb",
-          0,
-          0,
-          0
+          189,
+          188,
+          188
         ],
         "text-halo-color": [
           "rgb",
@@ -6236,7 +6238,7 @@
     },
     {
       "id": "pt-un-place",
-      "type": "circle",
+      "type": "symbol",
       "source": "v",
       "source-layer": "un-place",
       "filter": [
@@ -6251,19 +6253,35 @@
         true,
         false
       ],
-      "paint": {
-        "circle-color": [
-          "rgb",
-          26,
-          35,
-          126
+      "layout": {
+        "text-field": [
+          "get",
+          "placename1"
         ],
-        "circle-radius": 2.5
+        "text-font": [
+          "sans"
+        ],
+        "text-size": 9
+      },
+      "paint": {
+        "text-color": [
+          "rgb",
+          242,
+          99,
+          92
+        ],
+        "text-halo-color": [
+          "rgb",
+          238,
+          238,
+          238
+        ],
+        "text-halo-width": 1
       }
     },
     {
       "id": "pt-popp",
-      "type": "circle",
+      "type": "symbol",
       "source": "v",
       "source-layer": "popp",
       "filter": [
@@ -6278,14 +6296,30 @@
         true,
         false
       ],
-      "paint": {
-        "circle-color": [
-          "rgb",
-          26,
-          35,
-          126
+      "layout": {
+        "text-field": [
+          "get",
+          "cartolb"
         ],
-        "circle-radius": 2.5
+        "text-font": [
+          "sans"
+        ],
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": [
+          "rgb",
+          247,
+          147,
+          33
+        ],
+        "text-halo-color": [
+          "rgb",
+          238,
+          238,
+          238
+        ],
+        "text-halo-width": 1
       }
     },
     {

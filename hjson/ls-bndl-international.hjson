@@ -1,5 +1,5 @@
 {
-  id: ls-bndl
+  id: ls-bndl-international
   type: line
   source: v
   source-layer: bndl
@@ -12,15 +12,26 @@
       LineString
       MultiLineString
     ]
-    true
+    [
+      match
+      [
+        get
+        bdytyp_code
+      ]
+      [
+        '1'
+      ]
+      true
+      false
+    ]
     false
   ]
   paint: {
     line-color: [
       rgb
-      244
-      67
-      54
+      92
+      99
+      102
     ]
   }
 }

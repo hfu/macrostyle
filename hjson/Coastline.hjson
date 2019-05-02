@@ -3,6 +3,7 @@
   type: line
   source: v
   source-layer: Coastline
+  maxzoom: 2
   paint: {
     line-color: [
       rgb

@@ -36,10 +36,9 @@
     ls-river
     pg-ocean
     pg-water
-    ls-boundary-other
-    ls-boundary-international-disputed
-    ls-boundary-international
-    ls-bndl
+    ls-bndl-other
+    ls-bndl-international-disputed
+    ls-bndl-international
     ls-road-line-h
     ls-road-line-h-dash
     ls-road-case-underground
