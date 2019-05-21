@@ -389,7 +389,7 @@
         [
           yes
         ]
-        14
+        12
         [
           match
           [
@@ -397,9 +397,9 @@
             place
           ]
           city
-          12
-          town
           10
+          town
+          8
           village
           8 
           hamlet
