@@ -6327,7 +6327,7 @@
             [
               "yes"
             ],
-            1,
+            0,
             [
               "case",
               [
@@ -6570,6 +6570,26 @@
         false
       ],
       "layout": {
+        "icon-image": [
+          "match",
+          [
+            "get",
+            "poptyp_code"
+          ],
+          "1",
+          "national_capital",
+          "other"
+        ],
+        "icon-size": [
+          "match",
+          [
+            "get",
+            "poptyp_code"
+          ],
+          "1",
+          1,
+          0
+        ],
         "text-field": [
           "get",
           "cartolb"
@@ -6577,7 +6597,7 @@
         "text-font": [
           "sans"
         ],
-        "text-size": 12
+        "text-size": 20
       },
       "paint": {
         "text-color": [
