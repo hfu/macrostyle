@@ -619,10 +619,27 @@
       ],
       "paint": {
         "fill-color": [
-          "rgb",
-          187,
-          222,
-          251
+          "match",
+          [
+            "get",
+            "natural"
+          ],
+          [
+            "glacier"
+          ],
+          [
+            "rgba",
+            187,
+            222,
+            251,
+            0.2
+          ],
+          [
+            "rgb",
+            187,
+            222,
+            251
+          ]
         ]
       }
     },
@@ -709,7 +726,7 @@
             "zoom"
           ],
           1,
-          7,
+          6,
           2
         ]
       }
@@ -802,7 +819,7 @@
             "zoom"
           ],
           1,
-          7,
+          6,
           2
         ]
       }
@@ -893,7 +910,7 @@
             "zoom"
           ],
           1,
-          7,
+          6,
           2
         ]
       }
@@ -945,7 +962,7 @@
             "zoom"
           ],
           1,
-          7,
+          6,
           2
         ]
       }
@@ -955,7 +972,7 @@
       "type": "line",
       "source": "v",
       "source-layer": "bndl",
-      "minzoom": 7,
+      "minzoom": 6,
       "filter": [
         "match",
         [
@@ -1003,7 +1020,7 @@
       "source": "v",
       "source-layer": "bndl",
       "minzoom": 0,
-      "maxzoom": 7,
+      "maxzoom": 6,
       "filter": [
         "match",
         [

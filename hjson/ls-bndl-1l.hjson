@@ -3,7 +3,7 @@
   type: line
   source: v
   source-layer: bndl
-  minzoom: 7
+  minzoom: 6
   filter: [
     match
     [

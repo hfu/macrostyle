@@ -28,10 +28,27 @@
   ]
   paint: {
     fill-color: [
-      rgb
-      187
-      222
-      251
+      match
+      [
+        get
+        natural
+      ]
+      [
+        glacier
+      ]
+      [
+        rgba
+        187
+        222
+        251
+        0.2
+      ]
+      [
+        rgb
+        187
+        222
+        251
+      ]
     ]
   }
 }

@@ -4,7 +4,7 @@
   source: v
   source-layer: bndl
   minzoom: 0
-  maxzoom: 7
+  maxzoom: 6
   filter: [
     match
     [
