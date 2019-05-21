@@ -413,10 +413,23 @@
   }
   paint: {
     text-color: [
-      rgb
-      189
-      188
-      188
+      step
+      [
+        zoom
+      ]
+      [
+        rgb
+        189
+        188
+        188
+      ]
+      17
+      [
+        rgb
+        109
+        110
+        113
+      ]
     ]
     text-halo-color: [
       rgb

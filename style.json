@@ -5741,33 +5741,6 @@
       }
     },
     {
-      "id": "pt-boundary",
-      "type": "circle",
-      "source": "v",
-      "source-layer": "boundary",
-      "filter": [
-        "match",
-        [
-          "geometry-type"
-        ],
-        [
-          "Point",
-          "MultiPoint"
-        ],
-        true,
-        false
-      ],
-      "paint": {
-        "circle-color": [
-          "rgb",
-          183,
-          28,
-          28
-        ],
-        "circle-radius": 2.5
-      }
-    },
-    {
       "id": "pt-road",
       "type": "symbol",
       "source": "v",
@@ -6494,10 +6467,23 @@
       },
       "paint": {
         "text-color": [
-          "rgb",
-          189,
-          188,
-          188
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "rgb",
+            189,
+            188,
+            188
+          ],
+          17,
+          [
+            "rgb",
+            109,
+            110,
+            113
+          ]
         ],
         "text-halo-color": [
           "rgb",
