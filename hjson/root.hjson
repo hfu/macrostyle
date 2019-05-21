@@ -130,7 +130,7 @@
     pt-place
     pt-un-place
     pt-popp
-    pt-bndp
+    //pt-bndp
     pt-other
   ]
 }

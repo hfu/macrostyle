@@ -24,14 +24,13 @@
       sans
     ]
     text-size: 9
-    icon-image: un
   }
   paint: {
     text-color: [
       rgb
-      242
-      99
-      92
+      35
+      31
+      32
     ]
     text-halo-color: [
       rgb
@@ -39,6 +38,6 @@
       238
       238
     ]
-    text-halo-width: 1
+    text-halo-width: 0.5
   }
 }

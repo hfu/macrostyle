@@ -6533,15 +6533,14 @@
         "text-font": [
           "sans"
         ],
-        "text-size": 9,
-        "icon-image": "un"
+        "text-size": 9
       },
       "paint": {
         "text-color": [
           "rgb",
-          242,
-          99,
-          92
+          35,
+          31,
+          32
         ],
         "text-halo-color": [
           "rgb",
@@ -6549,7 +6548,7 @@
           238,
           238
         ],
-        "text-halo-width": 1
+        "text-halo-width": 0.5
       }
     },
     {
@@ -6614,7 +6613,7 @@
             ],
             "1",
             14,
-            10
+            8
           ],
           8,
           [
@@ -6625,7 +6624,7 @@
             ],
             "1",
             20,
-            14
+            12
           ]
         ],
         "text-anchor": [
@@ -6678,7 +6677,7 @@
             "literal",
             [
               0,
-              1
+              -1
             ]
           ]
         ]
@@ -6697,33 +6696,6 @@
           238
         ],
         "text-halo-width": 1
-      }
-    },
-    {
-      "id": "pt-bndp",
-      "type": "circle",
-      "source": "v",
-      "source-layer": "bndp",
-      "filter": [
-        "match",
-        [
-          "geometry-type"
-        ],
-        [
-          "Point",
-          "MultiPoint"
-        ],
-        true,
-        false
-      ],
-      "paint": {
-        "circle-color": [
-          "rgb",
-          26,
-          35,
-          126
-        ],
-        "circle-radius": 2.5
       }
     },
     {
