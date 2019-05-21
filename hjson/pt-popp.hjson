@@ -43,7 +43,69 @@
     text-font: [
       sans
     ]
-    text-size: 20
+    text-size: [
+      step
+      [
+        zoom
+      ]
+      20
+      18
+      10
+    ]
+    text-anchor: [
+      step
+      [
+        zoom
+      ]
+      [
+        match
+        [
+          get
+          poptyp_code
+        ]
+        '1'
+        bottom-left
+        top
+      ]
+      17
+      top
+    ]
+    text-offset: [
+      step
+      [
+        zoom
+      ]
+      [
+        match
+        [
+          get
+          poptyp_code
+        ]
+        '1'
+        [
+          literal
+          [
+            0.4
+            0
+          ]
+        ]
+        [
+          literal
+          [
+            0
+            0
+          ]
+        ]
+      ]
+      17
+      [
+        literal
+        [
+          0
+          1
+        ]
+      ]
+    ]
   }
   paint: {
     text-color: [
