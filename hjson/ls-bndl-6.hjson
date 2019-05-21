@@ -34,19 +34,19 @@
       102
     ]
     line-dasharray: [
-      5
+      10
+      4
       2
-      1
-      2
+      4
     ]
     line-width: [
       step
       [
         zoom
       ]
-      1
+      0.5
       6
-      2
+      1
     ]
   }
 }

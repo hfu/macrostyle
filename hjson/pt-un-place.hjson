@@ -24,6 +24,7 @@
       sans
     ]
     text-size: 9
+    icon-image: un
   }
   paint: {
     text-color: [
