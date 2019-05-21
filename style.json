@@ -6466,7 +6466,7 @@
             [
               "yes"
             ],
-            20,
+            18,
             [
               "match",
               [
@@ -6474,22 +6474,22 @@
                 "place"
               ],
               "city",
-              18,
-              "town",
               16,
+              "town",
+              14,
               "village",
-              12,
+              10,
               "hamlet",
-              12,
+              10,
               "isolated_dwelling",
-              12,
+              10,
               "locality",
-              12,
-              10
+              10,
+              8
             ]
           ],
           18,
-          10
+          8
         ]
       },
       "paint": {
@@ -6686,9 +6686,9 @@
       "paint": {
         "text-color": [
           "rgb",
-          247,
-          147,
-          33
+          35,
+          31,
+          32
         ],
         "text-halo-color": [
           "rgb",

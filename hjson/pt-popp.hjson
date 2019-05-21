@@ -132,9 +132,9 @@
   paint: {
     text-color: [
       rgb
-      247
-      147
-      33
+      35
+      31
+      32
     ]
     text-halo-color: [
       rgb

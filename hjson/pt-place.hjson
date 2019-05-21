@@ -385,7 +385,7 @@
         [
           yes
         ]
-        20
+        18
         [
           match
           [
@@ -393,22 +393,22 @@
             place
           ]
           city
-          18
-          town
           16
+          town
+          14
           village
-          12
-          hamlet
-          12
-          isolated_dwelling
-          12
-          locality
-          12
           10
+          hamlet
+          10
+          isolated_dwelling
+          10
+          locality
+          10
+          8
         ]
       ]
       18,
-      10
+      8
     ]
   }
   paint: {
