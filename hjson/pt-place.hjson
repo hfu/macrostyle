@@ -372,10 +372,14 @@
       sans
     ]
     text-size: [
-      step
+      interpolate
+      [
+        linear
+      ]
       [
         zoom
       ]
+      6
       [
         match
         [
@@ -385,7 +389,7 @@
         [
           yes
         ]
-        18
+        14
         [
           match
           [
@@ -393,9 +397,41 @@
             place
           ]
           city
-          16
+          12
           town
+          10
+          village
+          8 
+          hamlet
+          8
+          isolated_dwelling
+          8
+          locality
+          8
+          6
+        ]
+      ]
+      8
+      [
+        match
+        [
+          get
+          capital
+        ]
+        [
+          yes
+        ]
+        20
+        [
+          match
+          [
+            get
+            place
+          ]
+          city
           14
+          town
+          12
           village
           10
           hamlet
@@ -407,8 +443,6 @@
           8
         ]
       ]
-      18,
-      8
     ]
   }
   paint: {
