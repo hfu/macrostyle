@@ -702,7 +702,8 @@
         "line-dasharray": [
           5,
           1
-        ]
+        ],
+        "line-width": 2
       }
     },
     {
@@ -786,7 +787,8 @@
           2,
           1,
           2
-        ]
+        ],
+        "line-width": 2
       }
     },
     {
@@ -868,7 +870,8 @@
         "line-dasharray": [
           5,
           1
-        ]
+        ],
+        "line-width": 2
       }
     },
     {
@@ -911,7 +914,8 @@
           1,
           1,
           1
-        ]
+        ],
+        "line-width": 2
       }
     },
     {
@@ -957,7 +961,8 @@
           1,
           1,
           1
-        ]
+        ],
+        "line-width": 2
       }
     },
     {
@@ -966,7 +971,7 @@
       "source": "v",
       "source-layer": "bndl",
       "minzoom": 0,
-      "maxzoom": 7,
+      "maxzoom": 8,
       "filter": [
         "match",
         [
@@ -996,7 +1001,8 @@
           92,
           99,
           102
-        ]
+        ],
+        "line-width": 2
       }
     },
     {
