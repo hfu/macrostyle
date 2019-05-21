@@ -3,6 +3,7 @@
   type: line
   source: v
   source-layer: river
+  minzoom: 11
   filter: [
     match
     [
