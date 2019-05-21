@@ -44,13 +44,35 @@
       sans
     ]
     text-size: [
-      step
+      interpolate
+      [
+        linear
+      ]
       [
         zoom
       ]
-      20
-      18
-      10
+      6
+      [
+        match
+        [
+          get
+          poptyp_code
+        ]
+        '1'
+        14
+        10
+      ]
+      8
+      [
+        match
+        [
+          get
+          poptyp_code
+        ]
+        '1'
+        20
+        14
+      ]
     ]
     text-anchor: [
       step
