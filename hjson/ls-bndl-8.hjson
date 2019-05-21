@@ -37,6 +37,14 @@
       5
       1
     ]
-    line-width: 2
+    line-width: [
+      step
+      [
+        zoom
+      ]
+      1
+      7
+      2
+    ]
   }
 }

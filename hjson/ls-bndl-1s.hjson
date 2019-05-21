@@ -4,7 +4,7 @@
   source: v
   source-layer: bndl
   minzoom: 0
-  maxzoom: 8
+  maxzoom: 7
   filter: [
     match
     [
@@ -35,6 +35,5 @@
       99
       102
     ]
-    line-width: 2
   }
 }

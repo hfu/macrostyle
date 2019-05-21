@@ -703,7 +703,15 @@
           5,
           1
         ],
-        "line-width": 2
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          1,
+          7,
+          2
+        ]
       }
     },
     {
@@ -788,7 +796,15 @@
           1,
           2
         ],
-        "line-width": 2
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          1,
+          7,
+          2
+        ]
       }
     },
     {
@@ -871,7 +887,15 @@
           5,
           1
         ],
-        "line-width": 2
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          1,
+          7,
+          2
+        ]
       }
     },
     {
@@ -915,7 +939,15 @@
           1,
           1
         ],
-        "line-width": 2
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          1,
+          7,
+          2
+        ]
       }
     },
     {
@@ -923,7 +955,7 @@
       "type": "line",
       "source": "v",
       "source-layer": "bndl",
-      "minzoom": 8,
+      "minzoom": 7,
       "filter": [
         "match",
         [
@@ -971,7 +1003,7 @@
       "source": "v",
       "source-layer": "bndl",
       "minzoom": 0,
-      "maxzoom": 8,
+      "maxzoom": 7,
       "filter": [
         "match",
         [
@@ -1001,8 +1033,7 @@
           92,
           99,
           102
-        ],
-        "line-width": 2
+        ]
       }
     },
     {
