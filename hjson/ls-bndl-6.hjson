@@ -1,0 +1,43 @@
+{
+  id: ls-bndl-6
+  type: line
+  source: v
+  source-layer: bndl
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      LineString
+      MultiLineString
+    ]
+    [
+      match
+      [
+        get
+        bdytyp_code
+      ]
+      [
+        '6'
+      ]
+      true
+      false
+    ]
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      92
+      99
+      102
+    ]
+    line-dasharray: [
+      5
+      2
+      1
+      2
+    ]
+  }
+}

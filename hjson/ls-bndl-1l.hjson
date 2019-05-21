@@ -1,0 +1,46 @@
+{
+  id: ls-bndl-1l
+  type: line
+  source: v
+  source-layer: bndl
+  minzoom: 8
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      LineString
+      MultiLineString
+    ]
+    [
+      match
+      [
+        get
+        bdytyp_code
+      ]
+      [
+        '1'
+      ]
+      true
+      false
+    ]
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      92
+      99
+      102
+    ]
+    line-dasharray: [
+      5
+      1
+      1
+      1
+      1
+      1
+    ]
+  }
+}

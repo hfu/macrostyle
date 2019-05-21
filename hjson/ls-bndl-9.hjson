@@ -1,0 +1,38 @@
+{
+  id: ls-bndl-9
+  type: line
+  source: v
+  source-layer: bndl
+  filter: [
+    match
+    [
+      geometry-type
+    ]
+    [
+      LineString
+      MultiLineString
+    ]
+    [
+      match
+      [
+        get
+        bdytyp_code
+      ]
+      [
+        '9'
+      ]
+      true
+      false
+    ]
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      92
+      99
+      102
+    ]
+    line-width: 0.2
+  }
+}
