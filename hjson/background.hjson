@@ -3,10 +3,23 @@
   type: background
   paint: {
     background-color: [
-      rgb
-      245
-      245
-      245
+      step
+      [
+        zoom
+      ]
+      [
+        rgb
+        187
+        222
+        251
+      ]
+      2
+      [
+        rgb
+        245
+        245
+        245
+      ]
     ]
   }
 }
