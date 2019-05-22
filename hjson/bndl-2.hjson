@@ -1,0 +1,30 @@
+{
+  id: bndl-2
+  type: line
+  source: v
+  source-layer: bndl
+  filter: [
+    match
+    [
+      get
+      bdytyp
+    ]
+    2
+    true
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      0
+      0 
+      0
+    ]
+    line-dasharray: [
+      8
+      2
+      2
+      2
+    ]
+  }
+}

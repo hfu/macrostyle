@@ -1,0 +1,28 @@
+{
+  id: bndl-4
+  type: line
+  source: v
+  source-layer: bndl
+  filter: [
+    match
+    [
+      get
+      bdytyp
+    ]
+    4
+    true
+    false
+  ]
+  paint: {
+    line-color: [
+      rgb
+      0
+      0 
+      0
+    ]
+    line-dasharray: [
+      2
+      4
+    ]
+  }
+}

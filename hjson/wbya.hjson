@@ -1,0 +1,14 @@
+{
+  id: wbya
+  type: fill
+  source: v
+  source-layer: wbya
+  paint: {
+    fill-color: [
+      rgb
+      187
+      222
+      251
+    ]
+  }
+}

@@ -33,17 +33,140 @@
       }
     },
     {
-      "id": "Coastline",
+      "id": "bnda",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "bnda",
+      "paint": {
+        "fill-color": [
+          "rgb",
+          240,
+          244,
+          195
+        ]
+      }
+    },
+    {
+      "id": "bndl-1",
       "type": "line",
       "source": "v",
-      "source-layer": "Coastline",
-      "maxzoom": 2,
+      "source-layer": "bndl",
+      "filter": [
+        "match",
+        [
+          "get",
+          "bdytyp"
+        ],
+        1,
+        true,
+        false
+      ],
       "paint": {
         "line-color": [
           "rgb",
-          15,
-          135,
-          201
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "bndl-2",
+      "type": "line",
+      "source": "v",
+      "source-layer": "bndl",
+      "filter": [
+        "match",
+        [
+          "get",
+          "bdytyp"
+        ],
+        2,
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "line-dasharray": [
+          8,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bndl-3",
+      "type": "line",
+      "source": "v",
+      "source-layer": "bndl",
+      "filter": [
+        "match",
+        [
+          "get",
+          "bdytyp"
+        ],
+        3,
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "line-dasharray": [
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bndl-4",
+      "type": "line",
+      "source": "v",
+      "source-layer": "bndl",
+      "filter": [
+        "match",
+        [
+          "get",
+          "bdytyp"
+        ],
+        4,
+        true,
+        false
+      ],
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "line-dasharray": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "id": "wbya",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "wbya",
+      "paint": {
+        "fill-color": [
+          "rgb",
+          187,
+          222,
+          251
         ]
       }
     },

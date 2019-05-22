@@ -19,7 +19,13 @@
   glyphs: https://vectortiles.xyz/fonts/{fontstack}/{range}.pbf
   layers: [
     background
-    Coastline
+    //Coastline
+    bnda
+    bndl-1
+    bndl-2
+    bndl-3
+    bndl-4
+    wbya
     pg-structure
     pg-nature
     pg-lc
