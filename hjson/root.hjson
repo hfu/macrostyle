@@ -130,7 +130,7 @@
     pt-road
     pt-railway
     pt-route
-    pt-structure
+    //pt-structure
     pt-building
     ls-road-symbol
     pt-place

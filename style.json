@@ -6045,37 +6045,6 @@
       }
     },
     {
-      "id": "pt-structure",
-      "type": "symbol",
-      "source": "v",
-      "source-layer": "structure",
-      "minzoom": 17,
-      "filter": [
-        "match",
-        [
-          "geometry-type"
-        ],
-        [
-          "Point",
-          "MultiPoint"
-        ],
-        true,
-        false
-      ],
-      "layout": {
-        "icon-image": [
-          "match",
-          [
-            "get",
-            "barrier"
-          ],
-          "gate",
-          "prison",
-          "default"
-        ]
-      }
-    },
-    {
       "id": "pt-building",
       "type": "circle",
       "source": "v",
